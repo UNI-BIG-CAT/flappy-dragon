@@ -1,4 +1,4 @@
-#![cfg_attr(windows, windows_subsystem = "windows")] // #![...] 这种 crate 级别属性 只能放在 文件的最开头，在任何 mod、use 之前
+#![cfg_attr(all(windows, not(debug_assertions)), windows_subsystem = "windows")] // #![...] 这种 crate 级别属性 只能放在 文件的最开头，在任何 mod、use 之前
 
 mod constants;
 mod mode;
