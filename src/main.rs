@@ -1,4 +1,7 @@
+mod constants;
 mod mode;
+mod obstacle;
+mod player;
 mod state;
 //
 use bracket_lib::prelude::*;
