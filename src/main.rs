@@ -1,3 +1,5 @@
+#![cfg_attr(windows, windows_subsystem = "windows")] // #![...] 这种 crate 级别属性 只能放在 文件的最开头，在任何 mod、use 之前
+
 mod constants;
 mod mode;
 mod obstacle;
@@ -13,6 +15,6 @@ fn main() -> Result<(), Box<dyn Error + Send + Sync>> {
     let context = BTermBuilder::simple80x50()
         .with_title("Flappy Dragon")
         .build()?;
-    main_loop(context, State::new());
+    let _ = main_loop(context, State::new());
     Ok(())
 }

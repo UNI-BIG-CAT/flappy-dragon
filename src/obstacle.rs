@@ -1,4 +1,4 @@
-use crate::constants::{FRAME_DURATION, SCREEN_HEIGHT, SCREEN_WIDTH};
+use crate::constants::SCREEN_HEIGHT;
 use crate::player::Player;
 use bracket_lib::prelude::*;
 pub struct Obstacle {
