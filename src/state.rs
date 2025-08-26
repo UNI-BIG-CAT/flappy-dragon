@@ -1,7 +1,7 @@
-use crate::constants::{FRAME_DURATION, SCREEN_HEIGHT, SCREEN_WIDTH};
-use crate::mode::GameMode;
-use crate::obstacle::Obstacle;
-use crate::player::Player;
+use super::constants::{FRAME_DURATION, SCREEN_HEIGHT, SCREEN_WIDTH};
+use super::mode::GameMode;
+use super::obstacle::Obstacle;
+use super::player::Player;
 use bracket_lib::prelude::*;
 pub struct State {
     player: Player,
